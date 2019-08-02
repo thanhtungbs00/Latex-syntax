@@ -1,0 +1,59 @@
+% Preamble
+% ---
+\documentclass{myclass}
+
+% Packages
+% ---
+\usepackage{amsmath} % Advanced math typesetting
+\usepackage[utf8]{inputenc} % Unicode support (Umlauts etc.)
+\usepackage[ngerman]{babel} % Change hyphenation rules
+\usepackage{hyperref} % Add a link to your document
+\usepackage{graphicx} % Add pictures to your document
+\usepackage{listings} % Source code formatting and highlighting
+
+\author{Cao Thanh Tung} % The authors name
+\title{A quick start to \LaTeX{}} % The title of the document
+\date{\today{}} % Sets date you can remove \today{} and type a date manually
+
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex} % Use biblatex package
+\bibliography{FILENAME} % The name of the .bib file (name without .bib)
+\bibliography{lesson7a1} 
+
+\begin{document}
+
+% \maketitle{} % Generates title
+% \newpage
+%\tableofcontents{} % Generates table of contents from sections and subsections
+%\newpage
+
+%\section{Picture}
+%%% adding a picture
+%\begin{figure}[h]
+%	\includegraphics[width=\textwidth]{images/picture.jpg}
+%	\caption{This figure shows the logo of my website.}
+%\end{figure}
+
+%\section{references}\label{sec:YOURLABEL}
+%...
+%I've written text in section \ref{sec:YOURLABEL}.
+
+\name{Cao Thanh Tung}
+\contact{123 Broadway}{Binh Dinh}{HCM 12345}{thanhtungbs00@gmail.com}{(000)-111-1111}
+
+\section{Education}
+\datedsubsection{Ho Chi Minh University of Technology}{2016-2020}
+
+\section{Work}
+\datedsubsection{ABC Limited}{2008-Now}
+\workitems
+{Developed new product}
+{Improved productivity by 20\%}
+{Decreased costs by \$10,000}
+ 
+\section{Skills}
+\begin{tabular}{l l l l}
+	C\# & T-SQL & Javascript & HTML \\
+	XML & JSON & SOAP & REST
+\end{tabular}
+
+\end{document}
